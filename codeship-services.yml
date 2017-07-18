@@ -130,4 +130,7 @@ busybox:
 adddocker:
   image: docker:1.9-dind
   add_docker: true
+remote_busybox:
+  image: 841076584876.dkr.ecr.us-east-1.amazonaws.com/busybox:latest
+  encrypted_env_file: ecr-dockercfg.encrypted
 
