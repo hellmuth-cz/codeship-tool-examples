@@ -134,4 +134,6 @@ remote_busybox:
   image: 841076584876.dkr.ecr.us-east-1.amazonaws.com/busybox:latest
   cached: true
   encrypted_dockercfg_path: ecr-dockercfg.encrypted
-
+private_hub_busybox:
+  image: georgemac/busybox
+  encrypted_dockercfg_path: george-hub-dockercfg.encrypted
