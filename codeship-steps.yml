@@ -1,6 +1,4 @@
-- name: 21
-  service: remote_busybox
-  command: echo "foo"
-- name: 22
+- type: push
+  name: push 22
   service: private_hub_busybox
-  command: echo "foo"
+  registry: "https://index.docker.io/v1/"
