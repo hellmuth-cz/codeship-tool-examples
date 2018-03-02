@@ -3,4 +3,7 @@
 - service: demohub
   command: ruby --version
 - service: demodockerfiledockercompose
-  command: ls /app
+  command: false
+  on_fail:
+    - service: demodockerfile
+      command: echo 'I failed :('

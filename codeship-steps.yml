@@ -6,7 +6,10 @@
   - service: 01demohub
     command: ruby --version
   - service: 01demodockerfiledockercompose
-    command: ls /app
+    command: false
+    on_fail:
+      - service: 01demodockerfile
+        command: echo 'I failed :('
 - type: serial
   name: 02
   steps:
