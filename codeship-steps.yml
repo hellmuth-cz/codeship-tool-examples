@@ -204,3 +204,11 @@
 - name: 24
   service: 24healthchecks
   command: curl -sL 24elasticsearch:9200
+- name: 25before_approval
+  service: busybox
+  command: echo before_approval
+- type: manual
+  steps:
+    - name: 25after_approval
+      service: busybox
+      command: echo after_approval

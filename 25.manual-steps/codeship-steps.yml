@@ -1,0 +1,8 @@
+- service: service-a
+  name: before_approval
+  command: echo before_approval
+- type: manual
+  steps:
+    - service: service-a
+      name: after_approval
+      command: echo after_approval
